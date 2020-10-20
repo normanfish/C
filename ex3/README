@@ -1,0 +1,24 @@
+Exercise 3
+
+Pointers to functions, reading from files, and solving numerical problems programmicaly
+
+In this excersize, we were required to read a 2D matrix of real values, and apply to it a heat map function that was supplied in a separate file. 
+In the first file, calculator.c the main function (calculate) gets a function that can be applied to certain cells in the matrix, and applies the function to each of the
+cells until a certain condition is met (precision reached or number of iterations compelted).
+In the second file, reader.c, we implement a file reader that reads the relevant information needed from a file (see below) and passes the information on to the calculator.
+
+For example:
+
+50, 50 <- size of the matrix
+----
+0, 0, 5 <-coordinates and values (x,y,value)
+0, 1, 5
+0, 2, 5
+0, 47, -5
+0, 48, -5
+0, 49, -5
+----
+1e-3 <- precision required
+0 < - num of iterations done by calculator before we print a mid result to the console (0 if the only printout happens once the precision is reached)
+1 <- 1  if the calculation is cyclic (for instance,  if the heat map for a certain cell requires it's left neighbor, then (0,0) will be able to use the value in (0,49) 
+        if this value iff the value is 1)
