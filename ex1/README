@@ -1,0 +1,9 @@
+First assignment in C
+
+C basics, preprocessor, compiler, functions and loops
+
+We were given 3 simple tasks to get to know the C language:
+
+1) "encode" a string (cyclic shift)
+2) calculate sine
+3) calculate cosine
